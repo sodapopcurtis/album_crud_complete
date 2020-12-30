@@ -8,7 +8,6 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
@@ -16,8 +15,8 @@ public class DynamoDBConfig implements WebMvcConfigurer {
 
     private static final String SERVICE_ENDPOINT = "dynamodb.us-east-1.amazonaws.com";
     private static final String REGION = "us-east-1";
-    private static final String ACCESS_KEY = "AKIAZKBHDLANIE544JHQ";
-    private static final String SECRET_KEY = "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";
+    private static final String ACCESS_KEY = "[HIDDEN]";
+    private static final String SECRET_KEY = "[HIDDEN]";
 
     @Bean
     public DynamoDBMapper mapper() {
